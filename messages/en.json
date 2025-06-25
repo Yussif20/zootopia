@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "title": "Welcome to Zootopia",
+    "description": "Discover the wonders of our zoo and meet our amazing animals!"
+  },
+  "Header": {
+    "logo": "Zootopia",
+    "home": "Home",
+    "animals": "Animals",
+    "posts": "Posts",
+    "english": "English",
+    "arabic": "Arabic"
+  }
+}
