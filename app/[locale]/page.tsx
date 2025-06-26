@@ -24,7 +24,7 @@ const Home: FC = () => {
     },
     {
       name: "Tara the Tiger",
-      image: "/images/lion.jpg",
+      image: "/images/tiger.jpg",
       description: "Striped beauty of the wild.",
       species: "Tiger",
       habitat: "Jungle",
@@ -32,9 +32,9 @@ const Home: FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-fredoka">
       {/* Hero Section */}
-      <section className="relative bg-primary-orange text-white py-20 text-center animate-fade-in">
+      <section className="relative bg-[url('/images/wildlife.jpg')] bg-center bg-cover text-white py-20 text-center min-h-[60vh] flex flex-col items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary-orange opacity-50"></div>
         <div className="relative z-10">
           <h1 className="text-5xl font-bold mb-4">{t("hero.title")}</h1>
@@ -51,7 +51,7 @@ const Home: FC = () => {
       </section>
 
       {/* Animals Section */}
-      <section className="container mx-auto px-4 py-12">
+      <section className="container mx-auto py-12">
         <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-gray-100 animate-fade-in-delay">
           {t("animals.title")}
         </h2>

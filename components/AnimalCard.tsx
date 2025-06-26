@@ -19,8 +19,8 @@ const AnimalCard: FC<AnimalCardProps> = ({ name, image, description }) => {
           src={image}
           alt={name}
           width={400}
-          height={300}
-          className="object-cover"
+          height={400}
+          className="object-cover h-full w-full"
         />
         <div className="p-4">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">

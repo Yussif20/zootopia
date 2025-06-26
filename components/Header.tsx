@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = ({ locale }) => {
   };
 
   return (
-    <header className=" bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 transition-all duration-300">
+    <header className=" bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 transition-all duration-300 font-fredoka">
       <nav className="container mx-auto max-w-11/12 py-4 flex justify-between items-center">
         {/* Logo with Animation */}
         <Link
@@ -34,6 +34,7 @@ const Header: FC<HeaderProps> = ({ locale }) => {
           className="flex items-center justify-center gap-1 text-2xl font-bold text-primary-orange"
         >
           <Image
+            priority
             width={24}
             height={24}
             className="w-full"
@@ -42,6 +43,7 @@ const Header: FC<HeaderProps> = ({ locale }) => {
           />
           <p>{t("logo")}</p>
           <Image
+            priority
             width={24}
             height={24}
             className="w-full"
