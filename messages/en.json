@@ -1,7 +1,14 @@
 {
   "HomePage": {
-    "title": "Welcome to Zootopia",
-    "description": "Discover the wonders of our zoo and meet our amazing animals!"
+    "hero": {
+      "title": "Welcome to Zootopia",
+      "description": "Discover the wonders of our zoo and meet our amazing animals!",
+      "explore": "Explore Animals"
+    },
+    "animals": {
+      "title": "Meet Our Wildlife",
+      "viewAll": "View All Animals"
+    }
   },
   "Header": {
     "logo": "Zootopia",
@@ -10,5 +17,18 @@
     "posts": "Posts",
     "english": "English",
     "arabic": "Arabic"
+  },
+  "Animals": {
+    "title": "Our Amazing Animals",
+    "description": "Explore the diverse wildlife at Zootopia."
+  },
+  "Posts": {
+    "title": "Latest Zoo Updates",
+    "description": "Read the latest news and stories from Zootopia."
+  },
+  "AnimalPage": {
+    "title": "Animal: {animal}",
+    "description": "Details about the animal {animal}.",
+    "currentAnimal": "Current animal: {animal}"
   }
 }

@@ -49,7 +49,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className="dark">
       <body
-        className={`${geistSans.variable} ${poppins.variable} ${fredoka.variable} antialiased min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50 transition-colors duration-300`}
+        className={`${geistSans.variable} ${poppins.variable} ${fredoka.variable} antialiased min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50 transition-colors duration-300
+          `}
         cz-shortcut-listen="true"
       >
         <NextIntlClientProvider locale={locale} messages={messages}>

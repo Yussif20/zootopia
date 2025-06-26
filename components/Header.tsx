@@ -26,8 +26,8 @@ const Header: FC<HeaderProps> = ({ locale }) => {
   };
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 transition-all duration-300 font-fredoka">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className=" bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 transition-all duration-300">
+      <nav className="container mx-auto max-w-11/12 py-4 flex justify-between items-center">
         {/* Logo with Animation */}
         <Link
           href="/"
@@ -40,7 +40,7 @@ const Header: FC<HeaderProps> = ({ locale }) => {
             src={logoImage}
             alt="logo"
           />
-          {t("logo")}
+          <p>{t("logo")}</p>
           <Image
             width={24}
             height={24}
@@ -49,12 +49,11 @@ const Header: FC<HeaderProps> = ({ locale }) => {
             alt="logo"
           />
         </Link>
-
         {/* Navigation Links */}
         <ul
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } md:flex md:space-x-6 absolute md:static top-16 right-4 md:right-auto bg-white dark:bg-gray-800 md:bg-transparent p-4 md:p-0 rounded-lg md:flex-row flex-col space-y-2 md:space-y-0 shadow-md md:shadow-none transition-all duration-300`}
+          } md:flex md:space-x-6 absolute md:static top-16 right-4 md:right-auto md:bg-transparent p-4 md:p-0 rounded-lg md:flex-row flex-col space-y-2 md:space-y-0 shadow-md md:shadow-none transition-all duration-300 font-semibold `}
         >
           <li>
             <Link
