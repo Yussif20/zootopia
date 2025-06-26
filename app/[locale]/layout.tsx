@@ -2,8 +2,8 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Geist, Poppins } from "next/font/google";
 import "../globals.css";
+import { Geist, Poppins, Fredoka } from "next/font/google";
 import Header from "@/components/Header";
 
 const geistSans = Geist({
@@ -13,6 +13,12 @@ const geistSans = Geist({
 
 const poppins = Poppins({
   variable: "--font-poppins",
+  subsets: ["latin", "latin-ext"],
+  weight: ["300", "400", "500"],
+});
+
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
   subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500"],
 });
@@ -43,7 +49,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className="dark">
       <body
-        className={`${geistSans.variable} ${poppins.variable} antialiased`}
+        className={`${geistSans.variable} ${poppins.variable} ${fredoka.variable} antialiased min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50 transition-colors duration-300`}
         cz-shortcut-listen="true"
       >
         <NextIntlClientProvider locale={locale} messages={messages}>

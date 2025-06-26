@@ -24,7 +24,7 @@ const Home: FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-poppins">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-fredoka">
       <header className="p-4 text-center">
         <h1 className="text-4xl font-bold">{t("title")}</h1>
         <p className="mt-2 text-lg">{t("description")}</p>
@@ -46,4 +46,3 @@ const Home: FC = () => {
 };
 
 export default Home;
- 
